@@ -3,7 +3,7 @@
 17 AI agents that run a full sales funnel: find the accounts, find the people, write the outreach, run the pipeline.
 Each agent does one part of the process end to end, the way a good SDR would.
 
-All 17 run on one connection: the [ColdIQ MCP](https://coldiq.com). One account reaches 12 data providers: Apollo.io, PredictLeads, TheirStack, Sumble, Openmart, AI Ark, Prospeo, Findymail, FullEnrich, LeadMagic, Limadata and Exa. No 12 subscriptions, no 12 API keys. The same MCP also pushes leads to lemlist and Instantly.
+All 17 run on one connection: the [ColdIQ MCP](https://coldiq.com). One account reaches 11 data providers: PredictLeads, TheirStack, Sumble, Openmart, AI Ark, Prospeo, Findymail, FullEnrich, LeadMagic, Limadata and Exa. No 11 subscriptions, no 11 API keys. Apollo.io plugs in with your own Apollo key, and the same MCP pushes leads to lemlist and Instantly.
 
 Works in Grok Bot, Grok Build, Claude Code, Cursor, Codex, ChatGPT and Claude.
 
