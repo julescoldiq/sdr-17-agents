@@ -1,0 +1,8 @@
+{
+  "name": "sdr-team",
+  "description": "17 AI agents that run a full sales funnel: find the accounts, find the people, write the outreach, run the pipeline. Data through the hosted ColdIQ MCP (https://mcp.coldiq.com/mcp).",
+  "author": { "name": "ColdIQ", "url": "https://coldiq.com" },
+  "homepage": "https://coldiq.com",
+  "license": "MIT",
+  "keywords": ["sdr", "sales", "prospecting", "coldiq", "mcp"]
+}

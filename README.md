@@ -3,40 +3,40 @@
 17 AI agents that run a full sales funnel: find the accounts, find the people, write the outreach, run the pipeline.
 Each agent does one part of the process end to end, the way a good SDR would.
 
-14 of the 17 get their data through one connection: the [ColdIQ MCP](https://coldiq.com). One account reaches 12 data providers: Apollo.io, PredictLeads, TheirStack, Sumble, Openmart, AI Ark, Prospeo, Findymail, FullEnrich, LeadMagic, Limadata and Exa. No 12 subscriptions, no 12 API keys. The same MCP also pushes leads to lemlist and Instantly.
+All 17 run on one connection: the [ColdIQ MCP](https://coldiq.com). One account reaches 12 data providers: Apollo.io, PredictLeads, TheirStack, Sumble, Openmart, AI Ark, Prospeo, Findymail, FullEnrich, LeadMagic, Limadata and Exa. No 12 subscriptions, no 12 API keys. The same MCP also pushes leads to lemlist and Instantly.
 
-Works in Grok Bot, Claude Code, Cursor, Codex, ChatGPT and Claude.
+Works in Grok Bot, Grok Build, Claude Code, Cursor, Codex, ChatGPT and Claude.
 
 ## The 17 agents
 
 ### Step 1: Find the accounts
 
-1. [ICP Finder](agents/01-icp-finder.md) (ColdIQ x Apollo.io): turns one sentence into a target account list. *ColdIQ MCP*
-2. [Funding Radar](agents/02-funding-radar.md) (PredictLeads): companies that just raised. *ColdIQ MCP*
-3. [Hiring Radar](agents/03-hiring-radar.md) (TheirStack): companies hiring SDRs or AEs. *ColdIQ MCP*
-4. [Tech Stack Spy](agents/04-tech-stack-spy.md) (Sumble): who uses the tool you replace. *ColdIQ MCP*
-5. [Local Finder](agents/05-local-finder.md) (Openmart): shops, clinics and agencies by city. *ColdIQ MCP*
-6. [Lookalike Finder](agents/06-lookalike-finder.md) (AI Ark): 50 companies like your best customer. *ColdIQ MCP*
+1. [ICP Finder](skills/01-icp-finder/SKILL.md) (ColdIQ x Apollo.io): turns one sentence into a target account list. *ColdIQ MCP*
+2. [Funding Radar](skills/02-funding-radar/SKILL.md) (PredictLeads): companies that just raised. *ColdIQ MCP*
+3. [Hiring Radar](skills/03-hiring-radar/SKILL.md) (TheirStack): companies hiring SDRs or AEs. *ColdIQ MCP*
+4. [Tech Stack Spy](skills/04-tech-stack-spy/SKILL.md) (Sumble): who uses the tool you replace. *ColdIQ MCP*
+5. [Local Finder](skills/05-local-finder/SKILL.md) (Openmart): shops, clinics and agencies by city. *ColdIQ MCP*
+6. [Lookalike Finder](skills/06-lookalike-finder/SKILL.md) (AI Ark): 50 companies like your best customer. *ColdIQ MCP*
 
 ### Step 2: Find the people
 
-7. [Decision Maker Finder](agents/07-decision-maker-finder.md) (ColdIQ): the right title at every account. *ColdIQ MCP*
-8. [Email Finder](agents/08-email-finder.md) (Prospeo x Findymail): verified work emails only. *ColdIQ MCP*
-9. [Phone Finder](agents/09-phone-finder.md) (FullEnrich x LeadMagic): mobile numbers through the ColdIQ waterfall. *ColdIQ MCP*
-10. [LinkedIn Profiler](agents/10-linkedin-profiler.md) (Limadata): role, tenure and what they posted lately. *ColdIQ MCP*
-11. [Account Researcher](agents/11-account-researcher.md) (Exa): a one-paragraph brief on each company. *ColdIQ MCP*
+7. [Decision Maker Finder](skills/07-decision-maker-finder/SKILL.md) (ColdIQ): the right title at every account. *ColdIQ MCP*
+8. [Email Finder](skills/08-email-finder/SKILL.md) (Prospeo x Findymail): verified work emails only. *ColdIQ MCP*
+9. [Phone Finder](skills/09-phone-finder/SKILL.md) (FullEnrich x LeadMagic): mobile numbers through the ColdIQ waterfall. *ColdIQ MCP*
+10. [LinkedIn Profiler](skills/10-linkedin-profiler/SKILL.md) (Limadata): role, tenure and what they posted lately. *ColdIQ MCP*
+11. [Account Researcher](skills/11-account-researcher/SKILL.md) (Exa): a one-paragraph brief on each company. *ColdIQ MCP*
 
 ### Step 3: Write the outreach
 
-12. [Cold Email Writer](agents/12-cold-email-writer.md) (Wispr Flow): dictate the campaign, get a 3-step sequence. *Outside ColdIQ*
-13. [LinkedIn DM Writer](agents/13-linkedin-dm-writer.md) (lemlist): the connection note and the follow-up. *ColdIQ MCP*
-14. [Reply Handler](agents/14-reply-handler.md) (Slack): drafts every answer and books the call. *ColdIQ MCP + Slack MCP*
+12. [Cold Email Writer](skills/12-cold-email-writer/SKILL.md) (Wispr Flow): dictate the campaign, get a 3-step sequence. *ColdIQ MCP + Slack MCP*
+13. [LinkedIn DM Writer](skills/13-linkedin-dm-writer/SKILL.md) (lemlist): the connection note and the follow-up. *ColdIQ MCP*
+14. [Reply Handler](skills/14-reply-handler/SKILL.md) (Slack): drafts every answer and books the call. *ColdIQ MCP + Slack MCP*
 
 ### Step 4: Run the pipeline
 
-15. [Campaign Launcher](agents/15-campaign-launcher.md) (Instantly): pushes every lead into the right sequence. *ColdIQ MCP*
-16. [Follow-up Chaser](agents/16-follow-up-chaser.md) (Customer.io x PostHog): nudges everyone who went quiet. *Outside ColdIQ*
-17. [CRM Logger](agents/17-crm-logger.md) (Twenty or folk): every contact and reply lands in your CRM. *Outside ColdIQ*
+15. [Campaign Launcher](skills/15-campaign-launcher/SKILL.md) (Instantly): pushes every lead into the right sequence. *ColdIQ MCP*
+16. [Follow-up Chaser](skills/16-follow-up-chaser/SKILL.md) (Customer.io x PostHog): nudges everyone who went quiet. *ColdIQ MCP + Slack MCP*
+17. [CRM Logger](skills/17-crm-logger/SKILL.md) (Twenty or folk): every contact and reply lands in your CRM. *ColdIQ MCP + Slack MCP*
 
 ## Install in 2 steps
 
@@ -54,15 +54,20 @@ It signs in with your ColdIQ account (OAuth). There is no API key to paste and n
 
 ### 2. Load the agents
 
-- **Grok Bot**: create one Bot per agent. Paste the content of the agent file as its instructions. Start with 01, 07, 08 and 12: that is a working funnel already.
-- **Claude Code**: `./install.sh claude` copies the 17 files to `~/.claude/agents/`. Then: `use the icp-finder agent: B2B SaaS in France, 20 to 200 employees`.
+- **Grok Bot**: create one Bot per agent. Paste the content of its `SKILL.md` as the Bot instructions. Start with 01, 07, 08 and 12: that is a working funnel already.
+- **Grok Build**: `grok plugin install <this repo URL>`. The plugin bundles the 17 skills and the ColdIQ MCP. Then open `/mcps`, select `coldiq`, press `i` to sign in.
+- **Claude Code**: `./install.sh claude` copies the 17 skills to `~/.claude/skills/`. Then: `/01-icp-finder B2B SaaS in France, 20 to 200 employees`.
 - **Cursor**: `./install.sh cursor` writes them to `.cursor/rules/` of the current project.
 - **Codex**: `./install.sh codex` writes one `AGENTS.md` with the 17 agents.
-- **ChatGPT / Claude projects**: one project per agent, paste the file as the project instructions.
+- **ChatGPT / Claude projects**: one project per agent, paste its `SKILL.md` as the project instructions.
+
+## Always up to date
+
+Each agent starts by asking the ColdIQ MCP how ColdIQ runs that job today (`search_knowledge` and `load_skill`), so the method follows ColdIQ's playbooks as they improve. The files here fix the scope, the output and the hand-off.
 
 ## Agents 12, 14, 16 and 17
 
-They do not need data, they need your tools:
+They use ColdIQ for the method and your own tools for the rest:
 - **12 Cold Email Writer**: you dictate with [Wispr Flow](https://wisprflow.ai) (any voice-to-text works), it writes from the columns the data agents filled.
 - **14 Reply Handler**: reads replies through the ColdIQ MCP, posts drafts in Slack through the Slack MCP.
 - **16 Follow-up Chaser**: PostHog MCP and Customer.io MCP.

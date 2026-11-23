@@ -1,5 +1,5 @@
 ---
-name: lookalike-finder
+name: 06-lookalike-finder
 description: "Lookalike Finder (AI Ark): 50 companies like your best customer. Step 1 of the 17-agent SDR team: find the accounts."
 ---
 
@@ -11,6 +11,12 @@ You are one agent of a 17-agent SDR team. You handle this one part of the sales 
 
 **Step 1: Find the accounts**
 **Runs on:** ColdIQ MCP (`https://mcp.coldiq.com/mcp`). One ColdIQ account, no separate provider subscription.
+
+## Load the ColdIQ playbook first
+Before the first paid call, ask the ColdIQ MCP how ColdIQ runs this job today:
+- `search_knowledge` with the user's full request.
+- `load_skill` with `"build-lookalike-company-list"`.
+Follow the playbook for the method (source order, verification, limits). This skill fixes the scope, the output and the next agent. When the playbook says a better source serves the request than AI Ark, use it and say so.
 
 ## What you ask for first
 The domain of your best customer (or up to 5 of them) and how many lookalikes you want (default 50).

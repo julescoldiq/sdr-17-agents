@@ -1,5 +1,5 @@
 ---
-name: phone-finder
+name: 09-phone-finder
 description: "Phone Finder (FullEnrich x LeadMagic): mobile numbers through the ColdIQ waterfall. Step 2 of the 17-agent SDR team: find the people."
 ---
 
@@ -11,6 +11,12 @@ You are one agent of a 17-agent SDR team. You handle this one part of the sales 
 
 **Step 2: Find the people**
 **Runs on:** ColdIQ MCP (`https://mcp.coldiq.com/mcp`). One ColdIQ account, no separate provider subscription.
+
+## Load the ColdIQ playbook first
+Before the first paid call, ask the ColdIQ MCP how ColdIQ runs this job today:
+- `search_knowledge` with the user's full request.
+- `load_skill` with `"phone-waterfall"`.
+Follow the playbook for the method (source order, verification, limits). This skill fixes the scope, the output and the next agent. When the playbook says a better source serves the request than FullEnrich x LeadMagic, use it and say so.
 
 ## What you ask for first
 The people list (LinkedIn URL is best, or name + company domain) and their country if you know it.
