@@ -55,7 +55,7 @@ It signs in with your ColdIQ account (OAuth). There is no API key to paste and n
 ### 2. Load the agents
 
 - **Grok Bot**: create one Bot per agent. Paste the content of its `SKILL.md` as the Bot instructions. Start with 01, 07, 08 and 12: that is a working funnel already.
-- **Grok Build**: `grok plugin install <this repo URL>`. The plugin bundles the 17 skills and the ColdIQ MCP. Then open `/mcps`, select `coldiq`, press `i` to sign in.
+- **Grok Build**: `grok plugin install https://github.com/julescoldiq/sdr-17-agents`. The plugin bundles the 17 skills and the ColdIQ MCP. Then open `/mcps`, select `coldiq`, press `i` to sign in.
 - **Claude Code**: `./install.sh claude` copies the 17 skills to `~/.claude/skills/`. Then: `/01-icp-finder B2B SaaS in France, 20 to 200 employees`.
 - **Cursor**: `./install.sh cursor` writes them to `.cursor/rules/` of the current project.
 - **Codex**: `./install.sh codex` writes one `AGENTS.md` with the 17 agents.

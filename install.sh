@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Installs the 17 skills in your AI tool. Usage: ./install.sh claude|cursor|codex
-# Grok Build: grok plugin install <this repo URL>   Grok Bot: see README.
+# Grok Build: grok plugin install https://github.com/julescoldiq/sdr-17-agents   Grok Bot: see README.
 set -euo pipefail
 DIR="$(cd "$(dirname "$0")" && pwd)"
 case "${1:-}" in
